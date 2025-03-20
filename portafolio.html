@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Servicios IMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(to right, #0044cc, #0088ff);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: justify;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0044cc;
+            text-align: center;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+ .button-container {
+    text-align: center; /* Centra los botones */
+    margin-top: 20px; /* Espacio superior opcional */
+}
+
+.button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portafolio de Servicios IMS</h1>
+        <p>Soluciones innovadoras para garantizar conectividad, calidad y seguridad en telecomunicaciones.</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tema.html">Explicación del Tema</a>
+        <a href="simulacion.html">Simulación</a>
+        <a href="portafolio.html">Portafolio</a>
+    </nav>
+
+    <div class="container">
+        <h2>Introducción</h2>
+        <p>En nuestra empresa, ofrecemos soluciones innovadoras basadas en el Subsistema Multimedia IP (IMS), una arquitectura avanzada que permite la integración de diversos servicios multimedia sobre una plataforma IP. Nuestra tecnología garantiza la convergencia de redes, la interoperabilidad entre diferentes tecnologías de acceso y una experiencia de comunicación segura y de alta calidad.</p>
+
+        <div style="text-align: center;">
+  <img src="IMS.png" alt="Topología de red WLAN" style="max-width:100%; height:auto;">
+</div>
+
+        <h2>Nuestros Servicios IMS</h2>
+        <h3>Gestión de Llamadas y Sesiones IMS</h3>
+ <p>Brindamos servicios de control de llamadas y gestión de sesiones a través de nuestro núcleo IMS, compuesto por:</p>
+        <ul>
+            <li>Proxy-CSCF (P-CSCF): Primer punto de contacto que autentica y protege la comunicación.</li>
+            <li>Interrogating-CSCF (I-CSCF): Optimiza la conexión entre usuarios y servidores adecuados.</li>
+            <li>Serving-CSCF (S-CSCF): Garantiza la continuidad y calidad de las sesiones multimedia.</li>
+            <li>Home Subscriber Server (HSS): Base de datos centralizada que almacena la información del usuario, permitiendo autenticación segura y personalización del servicio</li>
+        </ul>
+<div style="text-align: center;">
+  <img src="AB.png" alt="Topología de red WLAN" style="max-width:100%; height:auto;">
+</div>
+        
+        <p>El diagrama muestra el proceso de señalización SIP dentro de una red IMS. Cuando un usuario A inicia una llamada a un usuario B, el mensaje INVITE es enviado a través de los distintos componentes del núcleo IMS: P-CSCF (Proxy-CSCF), I-CSCF (Interrogating-CSCF), S-CSCF (Serving-CSCF) y HSS (Home Subscriber Server). Una vez autenticados y registrados, la llamada se establece, y el flujo de voz (RTP) se transmite directamente entre los usuarios.</p>
+        <p> Ejemplo práctico:
+        Imagina que una empresa tiene su red IMS implementada. Un empleado en la oficina de Bogotá (Usuario A) llama a un compañero en la oficina de Medellín (Usuario B). La solicitud de llamada viaja a través de los servidores IMS, que validan, autentican y enrutan la comunicación. Finalmente, se establece la conexión y ambos pueden hablar en tiempo real mediante VoIP.</p>
+
+        <h2>Servicios de Comunicación en Diferentes Redes</h2>
+        <p>Nos especializamos en la interconexión de IMS con diversas redes, asegurando una experiencia de comunicación fluida:</p>
+        <ul>
+            <li>Conectividad con Redes 3G (UMTS/GPRS): Facilitamos la integración con redes móviles para ofrecer servicios de datos y voz con alta estabilidad.</li>
+            <li>Interoperabilidad con Redes Tradicionales (PSTN/GSM): Garantizamos compatibilidad con telefonía fija y móvil mediante pasarelas IMS.</li>
+            <li>Servicios sobre Redes IP (WLAN): Ofrecemos acceso a IMS mediante Wi-Fi y redes IP, mejorando la movilidad y flexibilidad.</li>
+        </ul>
+
+        <h2>Capas de Servicio IMS</h2>
+        <p>Nuestros servicios están diseñados para ofrecer una arquitectura robusta y escalable, distribuida en tres niveles:</p>
+        <ul>
+            <li>Capa de Acceso: Permite la conexión a nuestra plataforma IMS desde cualquier red.</li>
+            <li>Capa de Control: Administra la señalización y autenticación de usuarios para garantizar la seguridad.</li>
+            <li>Capa de Aplicaciones: Proporciona servicios avanzados como VoIP, videollamadas y mensajería instantánea.</li>
+        </ul>
+<div style="text-align: center;">
+  <img src="Cap.png" alt="Topología de red WLAN" style="max-width:100%; height:auto;">
+</div>
+        <h2>Ejemplos de Interconexión con Redes IMS</h2>
+        <h3>Ejemplo de Interconexión 3G (UMTS/GPRS)</h3>
+        <p>Un operador de telecomunicaciones con infraestructura 3G desea ofrecer servicios IMS a sus clientes. Gracias a la integración de IMS con su red UMTS/GPRS, los usuarios pueden realizar llamadas VoIP y videollamadas sin depender de la red de circuitos tradicional. Esto permite reducir costos operativos y mejorar la calidad de servicio mediante la optimización del tráfico de datos.</p>
+        <h3>Ejemplo de Interconexión con Redes PSTN/GSM</h3>
+        <p>Un proveedor de telefonía fija y móvil desea modernizar su infraestructura sin perder compatibilidad con redes tradicionales. Utilizando pasarelas IMS, logra conectar su red GSM/PSTN con IMS, permitiendo a los usuarios realizar llamadas entre dispositivos VoIP y teléfonos tradicionales sin interrupciones ni pérdida de calidad.</p>
+        <h3>Ejemplo de Interconexión con Redes IP (WLAN)</h3>
+        <p>Una empresa con múltiples sucursales implementa IMS para ofrecer llamadas de voz sobre Wi-Fi (VoWiFi). Esto permite que sus empleados realicen llamadas internas de alta calidad sin necesidad de usar la red celular, optimizando costos y garantizando conectividad en todo momento.</p>
+
+        <h2>Comparativa IMS vs Otras Tecnologías</h2>
+        <table>
+            <tr>
+                <th>Característica</th>
+                <th>IMS</th>
+                <th>VoIP Tradicional</th>
+                <th>NGN</th>
+            </tr>
+            <tr>
+                <td>Integración con múltiples redes</td>
+                <td>✅</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>Seguridad y autenticación avanzada</td>
+                <td>✅</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>Calidad de Servicio (QoS)</td>
+                <td>✅</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+            <tr>
+                <td>Escalabilidad y flexibilidad</td>
+                <td>✅</td>
+                <td>❌</td>
+                <td>✅</td>
+            </tr>
+        </table>
+
+        <h2>Beneficios a Largo Plazo</h2>
+        <ul>
+            <li>Reducción de costos operativos mediante infraestructura IP eficiente.</li>
+            <li>Mayor calidad de comunicación con mejor ancho de banda y menor latencia.</li>
+            <li>Adaptabilidad a tecnologías emergentes, como 5G y redes definidas por software (SDN).</li>
+        </ul>
+
+        <h2>Roadmap de Implementación</h2>
+        <ul>
+            <li>Fase 1 - Análisis y Planificación: Evaluación de requisitos y diseño de la solución.</li>
+            <li>Fase 2 - Implementación: Instalación de infraestructura IMS y pruebas iniciales.</li>
+            <li>Fase 3 - Optimización: Ajustes de QoS, seguridad y escalabilidad.</li>
+            <li>Fase 4 - Soporte y Evolución: Mantenimiento y actualización de la plataforma.</li>
+        </ul>
+
+        <h2>Planes y Tarifas</h2>
+        <table>
+            <tr>
+                <th>Plan</th>
+                <th>Características</th>
+                <th>Costo (USD/mes)</th>
+            </tr>
+            <tr>
+                <td>Plan Básico</td>
+                <td>Integración inicial con IMS para pequeñas empresas.</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Plan Avanzado</td>
+                <td>Solución completa con soporte 24/7 y optimización de QoS.</td>
+                <td>$1,200</td>
+            </tr>
+            <tr>
+                <td>Plan Personalizado</td>
+                <td>Diseño a medida según los requerimientos específicos del cliente.</td>
+                <td>A convenir</td>
+            </tr>
+        </table>
+
+        <h2>Garantía de Calidad y Seguridad</h2>
+        <ul>
+            <li>Alta Calidad de Servicio (QoS): Priorización de tráfico y reducción de latencia.</li>
+            <li>Seguridad Integral: Protección contra fraudes y ataques en telecomunicaciones.</li>
+            <li>Cumplimiento de Normativas: Adaptación a estándares internacionales.</li>
+        </ul>
+
+        <h2>Testimonios y Casos de Éxito</h2>
+        <ul>
+            <li>Reducción del 30% en costos operativos en operadores móviles.</li>
+            <li>Mejora del 50% en calidad de llamadas en redes empresariales.</li>
+            <li>Aumento del 40% en eficiencia de comunicación en el sector salud.</li>
+        </ul>
+
+        <h2>Proceso de Implementación</h2>
+        <ul>
+            <li>Análisis de Requerimientos: Evaluamos las necesidades del cliente.</li>
+            <li>Diseño de la Solución: Personalizamos la arquitectura IMS según la infraestructura existente.</li>
+            <li>Implementación y Pruebas: Instalamos y validamos el servicio antes de su despliegue.</li>
+            <li>Soporte y Optimización: Brindamos mantenimiento</li>
+    </ul>
+<div class="container">
+        <h2>Servicios Ofrecidos</h2>
+        <table>
+            <tr>
+                <th>Nombre del Estudiante</th>
+                <th>Tema Seleccionado</th>
+                <th>Link del Sitio Web</th>
+            </tr>
+            <tr>
+                <td>Carlos Andrés Gutierrez</td>
+                <td>Conexión entre redes WLAN e IMS</td>
+                <td><a href="https://magical-palmier-bb268b.netlify.app/" target="_blank">Visitar</a></td>
+            </tr>
+            <tr>
+                <td>Lucero Chamorro Serna</td>
+                <td>Conexión entre el DNS con IMS</td>
+                <td><a href="https://ejemplo2.com" target="_blank">Visitar</a></td>
+            </tr>
+            <tr>
+                <td>Roger Bryan Betancourth</td>
+                <td>Conexión entre UMTS e IMS</td>
+                <td><a href="https://ejemplo3.com" target="_blank">Visitar</a></td>
+            </tr>
+<tr>
+                <td>Stevens Oliveros Olarte</td>
+                <td>Conexión entre GPRS con IMS</td>
+                <td><a href="https://ejemplo3.com" target="_blank">Visitar</a></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="container">
+        <h2>Contáctanos</h2>
+<p>En nuestra empresa, nos comprometemos a proporcionar soluciones IMS innovadoras y eficientes para potenciar la comunicación de su negocio.
+En un mundo cada vez más interconectado, nuestra empresa se posiciona como un proveedor líder en soluciones IMS, asegurando comunicación de alta calidad, interoperabilidad con redes existentes y una infraestructura escalable y segura. Nuestra oferta de servicios está diseñada para optimizar la conectividad de su empresa, garantizando una experiencia fluida y eficiente.
+Con nuestra tecnología de última generación, le ayudamos a modernizar sus comunicaciones, reducir costos y mejorar la calidad del servicio. Estamos listos para ser su socio estratégico en la transformación digital.
+</p>
+        <p>📞 ¡Contáctenos hoy mismo para diseñar la mejor solución IMS para su empresa!</p>
+    </div>
+    </div class="container">
+<h2>Explora más</h2>
+        <center>
+    <p>Visita las siguientes secciones para profundizar en el tema:</p>
+</center>
+       <div class="button-container">
+      <a href="index.html" class="button">Home</a>
+     <a href="tema.html" class="button">Explicación del Tema</a>
+    <a href="simulacion.html" class="button">Simulación</a>
+    
+</div>
+
+   <footer>
+    <p style="text-align: center; line-height: 1.2;">Desarrollado por CARLOS ANDRES GUTIERREZ<br>
+    Curso: Planificación y Diseño de IMS Universidad Nacional Abierta y a Distancia <br> (UNAD) 2025</p>
+</footer>
+
+</body>
+</html>
