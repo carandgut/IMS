@@ -34,7 +34,7 @@
             background-color: #0056b3;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             padding: 20px;
             text-align: justify;
@@ -45,6 +45,12 @@
         h2 {
             color: #0044cc;
             text-align: center;
+        }
+
+        h4 {
+            color: #0044cc;
+            text-align: center;
+            font-family: Georgia;
         }
         ul {
             list-style-type: disc;
@@ -71,12 +77,38 @@
             padding: 20px;
             margin-top: 20px;
         }
- .button-container {
-    text-align: center; /* Centra los botones */
-    margin-top: 20px; /* Espacio superior opcional */
-}
 
-.button {
+        img.responsive {
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        .service-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .service-box {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 10px;
+            background-color: #e8f0ff;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .service-box img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
             display: inline-block;
             background-color: #007bff;
             color: white;
@@ -89,8 +121,6 @@
         .button:hover {
             background-color: #0056b3;
         }
-
-
     </style>
 </head>
 <body>
@@ -117,7 +147,7 @@
           Mayor productividad: Facilita la colaboración en tiempo real con videollamadas y mensajería instantánea.<br>
            Mejor experiencia del cliente: Ofrece llamadas y videollamadas con alta calidad y sin interrupciones, mejorando la satisfacción del cliente.
         <div style="text-align: center;">
-  <img src="IMS.png" alt="Topología de red WLAN" style="max-width:100%; height:auto;">
+  <img src="IMS.png" alt="Topología de red WLAN" style="max-width:60%; height:500px;">
 </div>
 
         <h2>Nuestros Servicios IMS</h2>
@@ -134,7 +164,7 @@
         <p> Creamos soluciones personalizadas para las necesidades únicas de tu negocio.<br>
         <p> Ejemplo: Integración de IMS con tu sistema de atención al cliente, desarrollo de aplicaciones de comunicación personalizadas.<br>
        <div style="text-align: center;">
-          <img src="iconos.png" alt="Topología de red WLAN" style="max-width:100%; height:auto;">
+          <img src="iconos.png" alt="Topología de red WLAN" style="max-width:60%; height:500px;">
          </div>
         
         
@@ -152,7 +182,7 @@
         
 
 <div style="text-align: center;">
-  <img src="conexion.png" alt="Topología de red WLAN" style="max-width:100%; height:auto;">
+  <img src="conexion.png" alt="Topología de red WLAN" style="max-width:60%; height:500px;">
 </div>
         <h2>Ejemplos de Interconexión con Redes IMS</h2>
         <h3>Ejemplo de Interconexión 3G (UMTS/GPRS)</h3>
@@ -256,36 +286,39 @@
             <li>Implementación y Pruebas: Instalamos y validamos el servicio antes de su despliegue.</li>
             <li>Soporte y Optimización: Brindamos mantenimiento</li>
     </ul>
-<div class="container">
-        <h2>Servicios Ofrecidos</h2>
-        <table>
-            <tr>
-                <th>Nombre del Estudiante</th>
-                <th>Tema Seleccionado</th>
-                <th>Link del Sitio Web</th>
-            </tr>
-            <tr>
-                <td>Carlos Andrés Gutierrez</td>
-                <td>Conexión entre redes WLAN e IMS</td>
-                <td><a href="https://magical-palmier-bb268b.netlify.app/" target="_blank">Visitar</a></td>
-            </tr>
-            <tr>
-                <td>Lucero Chamorro Serna</td>
-                <td>Conexión entre GPRS con IMS</td>
-                <td><a href="https://67eddd3c4def6fae12d3ada3--bucolic-salmiakki-a974f5.netlify.app/" target="_blank">Visitar</a></td>
-            </tr>
-            <tr>
-                <td>Roger Bryan Betancourth</td>
-                <td>Conexión entre UMTS e IMS</td>
-                <td><a href="https://ejemplo3.com" target="_blank">Visitar</a></td>
-            </tr>
-<tr>
-                <td>Stevens Oliveros Olarte</td>
-                <td>Conexión entre el DNS con IMS</td>
-                <td><a href="https://actividad-unad.odoo.com" target="_blank">Visitar</a></td>
-            </tr>
-
-        </table>
+ <div class="container">
+        <h2>Servicios de Interconexión IMS</h2>
+        <p>A continuación, presentamos nuestras soluciones especializadas de interconexión con IMS, cada una diseñada para diferentes tipos de redes tradicionales y modernas.</p>
+        <div class="service-section">
+            <div class="service-box">
+                <img src="DNS IMS.png" alt="DNS y GSM">
+                <h3>DNS & GSM con IMS</h3>
+                <h4>Steven Oliveros</h4>
+                <p>Conectividad entre servidores DNS y redes GSM utilizando arquitectura IMS para garantizar eficiencia y cobertura móvil.</p>
+                <a href="#" class="button">Ver más</a>
+            </div>
+            <div class="service-box">
+                <img src="GPRS IMS.png" alt="GPRS">
+                <h3>GPRS con IMS</h3>
+                <h4>Lucero Chamorro Serna</h4>
+                <p>Integración de redes GPRS con IMS para ofrecer servicios avanzados de datos móviles sobre plataformas IP.</p>
+                <a href="gprs.html" class="button">Ver más</a>
+            </div>
+            <div class="service-box">
+                <img src="UMTS-IMS.png" alt="UMTS">
+                <h3>UMTS con IMS</h3>
+		<h4>Roger Betancourth</h4>
+                <p>Permite que redes 3G/UMTS ofrezcan servicios de voz y video mediante la capa de control de IMS.</p>
+                <a href="https://umts.my.canva.site/new-products-and-services-business-website-in-violet-dark-blue-neon-pink-gradient-tech-style#about" class="button">Ver más</a>
+            </div>
+            <div class="service-box">
+                <img src="WLAN E IMS.png" alt="WLAN">
+                <h3>WLAN con IMS</h3>
+                <h4>Carlos Gutierrez</h4>
+                <p>Habilita llamadas de voz y video sobre redes inalámbricas (WiFi) conectadas a infraestructura IMS.</p>
+                <a href="#" class="button">Ver más</a>
+            </div>
+        </div>
     </div>
     <h2>Conexión entre redes WLAN e IMS </h2>
     <h3>Tablas de direcciones IP </h3>
@@ -401,9 +434,10 @@ Con nuestra tecnología de última generación, le ayudamos a modernizar sus com
 </div>
 
    <footer>
-    <p style="text-align: center; line-height: 1.2;">Desarrollado por CARLOS ANDRES GUTIERREZ<br>
+    <p style="text-align: center; line-height: 1.2;">Desarrollado por LUCERO CHAMORRO SERNA - CARLOS ANDRES GUTIERREZ<br>
     Curso: Planificación y Diseño de IMS Universidad Nacional Abierta y a Distancia <br> (UNAD) 2025</p>
 </footer>
 
 </body>
 </html>
+
